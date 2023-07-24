@@ -38,7 +38,7 @@ Vue.createApp({
     deleteItem(index) {
       this.toDoList.splice(index, 1);
     },
-    toggleItem(item) {
+    toggleItem(item) {  //bonus
       item.done = !item.done;
     }
   }
