@@ -33,5 +33,14 @@ Vue.createApp({
         }
       ]
     }
+  },
+  methods: {
+    deleteItem(item) {
+      if (item.done) {
+        item.done = 1;
+      } else {
+        item.done = 0;
+      }
+    }
   }
 }).mount(CONTAINER);
