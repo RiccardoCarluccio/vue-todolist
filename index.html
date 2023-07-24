@@ -10,6 +10,11 @@
 </head>
 <body>
 
+  <div id="container">
+    <ul>
+      <li v-for="(item) in toDoList">{{item.id}} {{item.text}} {{item.done}}</li>
+    </ul>
+  </div>
   
   <script src="JS/main.js"></script>
 </body>

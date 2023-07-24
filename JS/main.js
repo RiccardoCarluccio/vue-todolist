@@ -1,35 +1,37 @@
 "use strict"
 
+const CONTAINER = document.getElementById('container');
+
 Vue.createApp({
   data() {
     return {
       toDoList: [
         {
           id: 1,
-          text: alfa,
+          text: 'alfa',
           done: 1,
         },
         {
           id: 2,
-          text: beta,
+          text: 'beta',
           done: 0,
         },
         {
           id: 3,
-          text: gamma,
+          text: 'gamma',
           done: 1,
         },
         {
           id: 4,
-          text: delta,
+          text: 'delta',
           done: 0,
         },
         {
           id: 5,
-          text: epsilon,
+          text: 'epsilon',
           done: 1,
         }
       ]
     }
   }
-})
+}).mount(CONTAINER);
