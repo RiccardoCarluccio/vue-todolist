@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
 
   <title>To Do List</title>
 </head>
@@ -12,7 +13,7 @@
 
   <div id="container">
     <ul>
-      <li v-for="(item) in toDoList">{{item.id}} {{item.text}} {{item.done}}</li>
+      <li v-for="(item) in toDoList" :class="(item.done ? 'barred-text' : '')">{{item.text}}</li>
     </ul>
   </div>
   
