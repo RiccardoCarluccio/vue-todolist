@@ -35,12 +35,11 @@ Vue.createApp({
     }
   },
   methods: {
-    deleteItem(item) {
-      if (item.done) {
-        item.done = 1;
-      } else {
-        item.done = 0;
-      }
+    deleteItem(index) {
+      this.toDoList.splice(index, 1);
+    },
+    toggleItem(item) {
+      item.done = !item.done;
     }
   }
 }).mount(CONTAINER);

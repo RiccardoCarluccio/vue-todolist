@@ -15,9 +15,9 @@
 
   <div id="container">
     <ul>
-      <li v-for="(item) in toDoList" :class="(item.done ? 'barred-text' : '')">
+      <li v-for="(item, index) in toDoList" :class="(item.done ? 'barred-text' : '')">
         {{item.text}}
-        <button @click="deleteItem(item)"><i class="fa-solid fa-dragon"></i></button>
+        <button @click="deleteItem(index)"><i class="fa-solid fa-dragon"></i></button>
       </li>
     </ul>
   </div>
